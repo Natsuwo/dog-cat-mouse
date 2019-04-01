@@ -27,4 +27,6 @@
  * git reset --soft <to_commit>
  * git reset --mixed <to_commit>
  * git reset --hard <to_commit>
+ * 
+ * git revert <commit>
  */
