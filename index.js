@@ -13,6 +13,18 @@
  * staging area
  * git repository
  * 
- * git checkout
+ * git checkout -- <file>
  * git reset
+ * 
+ * git checkout -b <branch> (branching)
+ * git checkout <branch>
+ * git merge
+ * A <--- B
+ * git checkout A
+ * merge A to B
+ * git branch -D <branch>
+ * 
+ * git reset --soft <to_commit>
+ * git reset --mixed <to_commit>
+ * git reset --hard <to_commit>
  */
