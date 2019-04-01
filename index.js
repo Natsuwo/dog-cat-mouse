@@ -29,4 +29,10 @@
  * git reset --hard <to_commit>
  * 
  * git revert <commit>
+ * 
+ * .gitignore // bỏ qua check status
  */
+
+ var Dog = require('./Dog');
+ var dog = new Dog('Tom');
+ dog.sayHi();
