@@ -6,4 +6,5 @@
  * 
  * git log
  * git show
+ * git diff // diffrent
  */
