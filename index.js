@@ -7,4 +7,9 @@
  * git log
  * git show
  * git diff // diffrent
+ * 
+ * 
+ * wroking directory
+ * staging area
+ * git repository
  */
