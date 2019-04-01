@@ -12,4 +12,7 @@
  * wroking directory
  * staging area
  * git repository
+ * 
+ * git checkout
+ * git reset
  */
