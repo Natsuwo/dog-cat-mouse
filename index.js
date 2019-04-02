@@ -22,7 +22,7 @@
  * A <--- B
  * git checkout A
  * merge A to B
- * git branch -D <branch>
+ * git branch -D <branch> // xoá
  * 
  * git reset --soft <to_commit>
  * git reset --mixed <to_commit>
