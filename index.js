@@ -22,7 +22,7 @@
  * A <--- B
  * git checkout A
  * merge A to B
- * git branch -D <branch>
+ * git branch -D <branch> // xoá
  * 
  * git reset --soft <to_commit>
  * git reset --mixed <to_commit>
@@ -56,13 +56,34 @@
  *     4.2. fetch branch into local to test offline (optional)
  *     4.3. approve the pull request
  * 5/ merge to master
+ * 
+ * // Resolve conflicts
+ * When will conflicts happen?
+ *    1. Changing the same file + same line
+ *    2. A deleted file X, B modified file X
+ * Method 1:
+ *    1. Using 'git rebase'
+ *    2. Resolve conflict
+ *    3. Push again with -f
+ * Method 2:
+ *    1. Merge updated master to feature branch
+ *    2. Resolve conflict
+ *    3. Commit and push
  */
 
 var Dog = require('./Dog');
 var Cat = require('./Cat');
+var Mouse = require('./Mouse');
 
 
 var dog = new Dog('Tom');
 var tom = new Cat();
-dog.eat(tom);
-console.log(dog);
+
+var cat = new Cat();
+var mouse = new Mouse('Mickey');
+try {
+    cat.eat(dog);
+} catch (error) {
+    console.log('Error while cat eating a dog');
+}
+console.log(cat);
