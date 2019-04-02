@@ -18,7 +18,7 @@
  * 
  * git checkout -b <branch> (branching)
  * git checkout <branch>
- * git merge
+ * git merge // gộp 2 nhánh
  * A <--- B
  * git checkout A
  * merge A to B
@@ -36,6 +36,26 @@
  * git remote -v
  * git push -u origin master
  * 
+ * git config --global credential.helper store
+ * ^^^ not recommend (~/.git-credentials)
+ * 
+ * git config --global credential.helper "cache --timeout=18000" // 5 hours
+ * 
+ * google "gnome-keyring" "git ssh" // Ubuntu
+ * 
+ * 
+ * git clone
+ * git pull
+ * 
+ * *pull request
+ * 1/ git checkout -b <feature_branch>
+ * 2/ git push origin <branch>
+ * 3/ create a pull request on Github
+ * 4/ review code
+ *     4.1. review code online (github)
+ *     4.2. fetch branch into local to test offline (optional)
+ *     4.3. approve the pull request
+ * 5/ merge to master
  */
 
  var Dog = require('./Dog');
