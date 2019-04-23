@@ -1,27 +1,27 @@
 /**
- * git init
- * git status
- * git add
- * git commit
+ * git init => khởi tạo git
+ * git status => kiểm tra trạng thái
+ * git add => Thêm một hoặc nhiều file vào track
+ * git commit => đóng gói các file đã add etc: git commit -m "Something..."
  * 
- * git log
- * git show
- * git diff // diffrent
+ * git log => xem lại lịch sử đã commit
+ * git show <ID> => xem thay đổi trong file  
+ * git diff // diffrent => kiểm tra thay đổi mới của các file đã modified / add
  * 
  * 
- * wroking directory
+ * working directory
  * staging area
  * git repository
  * 
- * git checkout -- <file>
- * git reset
+ * git checkout --<file> => loại bỏ những dòng đã thêm khi chưa lên staging area 
+ * git reset <FILE> => trả về working dir
  * 
- * git checkout -b <branch> (branching)
- * git checkout <branch>
- * git merge // gộp 2 nhánh
+ * git checkout -b <branch> (branching) => Tạo nhánh mới và checkout vào nhánh đó
+ * git checkout <branch> => chuyển nhánh
+ * git merge // gộp 2 nhánh 
  * A <--- B
  * git checkout A
- * merge A to B
+ * merge B
  * git branch -D <branch> // xoá
  * 
  * git reset --soft <to_commit>
@@ -31,8 +31,9 @@
  * git revert <commit>
  * 
  * .gitignore // bỏ qua check status
- * 
- * git remote add origin <link>
+ *  
+ * // Cho lên github
+ * git remote add origin <link_project>
  * git remote -v
  * git push -u origin master
  * 
